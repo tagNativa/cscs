@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coop. Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-link:hover {
+            background-color: #ff7300;
+        }
+
+        .navbar-brand {
+            width: 250px;
+            height: 70px;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .carousel-item img {
+            object-fit: contain;
+            height: 50vh;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+
+        .card-body a:hover {
+            background-color: #ff7300;
+        }
+
+        .credit{
+            color: #76848f;
+        }
+    </style>
+
+    <title>Coop. Service</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="p-0 navbar navbar-expand-lg navbar-light border-bottom py-3">
+        <div class="container w-100 d-flex justify-content-between align-items-center">
+
+            <img src="assets/img/logo.png" class="navbar-brand">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-menu"
+                aria-controls="header-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="header-menu">
+                <div class="navbar-nav d-flex gap-3">
+                    <a class="nav-link active btn btn-secondary text-white px-3" style="font-weight: bold;"
+                        href="#sobre">Sobre</a>
+                    <a class="nav-link active btn btn-secondary text-white px-3" style="font-weight: bold;"
+                        href="#servicos">Serviços</a>
+                    <a class="nav-link active btn btn-secondary text-white px-3" style="font-weight: bold;"
+                        href="#missaovisaovalores">Política da Empresa</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container py-4 d-flex flex-column gap-4">
+            <!-- carousel imagens -->
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner overflow-hidden d-flex align-items-center"
+                    style="max-height:80vh !important;">
+
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="https://img.freepik.com/fotos-gratis/jardineiro-com-weedwacker-cortando-a-grama-no-jardim_329181-20539.jpg?t=st=1746186880~exp=1746190480~hmac=c46f95be5d9f899a76e4424c6ec8d2b8e37496b4a2ebaaf0ff194ba133021956&w=900"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://img.freepik.com/fotos-gratis/jovem-artesao-construindo-uma-casa_1303-27969.jpg?t=st=1746187136~exp=1746190736~hmac=3bd2569502bbf437d1ddc6d4c7b6b5c308a52b498e2461c6ee88dd0e34ddab36&w=996"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://img.freepik.com/fotos-gratis/foto-de-close-up-da-jovem-empregada-morena-sorridente-em-uniforme-calcar-luvas-de-borracha-amarelas-em-pe_171337-18259.jpg?t=st=1746188191~exp=1746191791~hmac=ab1863d26b94ee72e4fd37f02785c3e7eebc19fb1bebfcec543997cc566162c7&w=996"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://st4.depositphotos.com/16122460/22524/i/600/depositphotos_225245028-stock-photo-male-worker-cleaning-outdoor-pool.jpg"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://img.freepik.com/fotos-gratis/equipe-um-tecnico-eletrico-trabalhando-em-um-quadro-de-distribuicao-com-fusiveis_169016-25050.jpg?t=st=1746199159~exp=1746202759~hmac=0969d3a7816a92b33761c7c3951716cfc173312bcffb15f71e5ccb89e36b6d51&w=740"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://img.freepik.com/fotos-gratis/construtor-masculino-de-uniforme-capacete-parede-de-pintura-de-luvas-com-rolo-vista-traseira_176474-10042.jpg?t=st=1746199231~exp=1746202831~hmac=4b132b95cc6a38d7c2e7866d744f206a70892a83a78f226d43a9ce6668957a63&w=740"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://img.freepik.com/fotos-gratis/retrato-do-guarda-de-seguranca-masculino-com-estacao-de-radio-e-telas-de-camera_23-2150368714.jpg?t=st=1746195983~exp=1746199583~hmac=8c12583094efd7827223fa49bec794c94b2a6b8bb1c7522e259a6dab205a429d&w=996"
+                            class="w-100">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="https://st2.depositphotos.com/46839474/46016/i/600/depositphotos_460166486-stock-photo-smiling-male-worker-standing-cross.jpg"
+                            class="w-100">
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- seção sobre -->
+            <div id="sobre" class="text-secondary">
+                <h2>Sobre</h2>
+                <p>
+                    Somos uma empresa no mercado de mão de obra, focada em atender as demandas de pequenas escalas ou
+                    ate mesmo em grandes períodos, com foco no comprometimento, agilidade e flexibilidade.
+                    A cooperativa operará como uma plataforma que conecta empresas a freelancers em diversas áreas.
+                    Fazendo que tenha acessos a grandes talentos em conexão direta, em pool de diversificadas atividades
+                    e especializações.
+                    Tendo contratações sob demanda, permitindo os ajustes conforme necessidades, em foco de economia em
+                    tempo e recursos.
+                    Uma empresa com capacidade de atender projetos de diferentes escalas e complexidades, desde mão de
+                    obras diárias como serviços a longos prazos.
+                    A Coop. Service, se propõe a transformar a forma de prestação de serviço, diminuindo os vínculos
+                    empregatícios e problemas jurídicos, criando um ecossistema que promove o desenvolvimento
+                    sustentável a uma colaboração de sucesso mútuo. Estamos comprometidos a redefinir o mercado de
+                    prestações de serviços, entregando valor a freelancers quanto as empresas que contratam.
+                </p>
+            </div>
+
+            <!-- seção serviços -->
+            <div id="servicos">
+
+                <h2 class="text-secondary">Serviços</h2>
+
+                <div class="d-flex flex-column justify-content-center align-items-center gap-2 text-secondary">
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Jardinagem</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- cards dos serviços prestados -->
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Piscineiro</h5>
+                            <p class="card-text">
+                                Profissional freelancers com diversas experiências curriculares, com perfis responsáveis
+                                em cuidar da limpeza, tratamento e manutenção de piscinas.
+                                Serviços: Residencial, Comercial e Predial.
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Auxiliar de limpeza</h5>
+                            <p class="card-text">
+                                A possibilidade da mão de obra sobre demanda, com pessoas capacitadas e experientes,
+                                possibilitando um atendimento mais focado e eficiente, em distintas situações e
+                                flexibilidades de horários.
+                                Serviços: Residencial, Comercial, Predial e Pós-Obra (profunda).
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Pintor</h5>
+                            <p class="card-text">
+                                Colaboradores Freelancers, tem suas vantagens de experiencias devido vivencia no
+                                mercado, preços mais acessíveis, não obtém vínculos empregatícios, flexibilidades de
+                                horários e prazos melhores.
+                                Serviços: Residencial, Comercial, Predial e Industrial.
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Pedreiro</h5>
+                            <p class="card-text">
+                                Contratar pedreiros freelancers traz uma série de vantagem, especialmente para quem
+                                precisa de serviços de construção ou reforma de forma mais flexível e personalizada.
+                                Tendo custo benefício mais baratos, evitando taxas e vínculos empregatícios.
+                                Serviços: Residencial, Comercial, Predial e Industrial.
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Eletricista</h5>
+                            <p class="card-text">
+                                Os benefícios de prestadores com experiência diversificadas, comunicação direta e com
+                                foco na necessidade, otimizando tempo e procura.
+                                Serviços: Residencial, Predial, Comercial e Industrial.
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Vigilância</h5>
+                            <p class="card-text">
+                                A contratação de vigias freelancers gera o beneficio de economia, flexibilidade de
+                                horários, contratação mais rápida e a diminuição burocrática juridicamente.
+                                Serviços: Obras, Comércios, Residencial, Predial e Avulsos.
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Inventário</h5>
+                            <p class="card-text">
+                                Melhor gestão de estoque, redução de custos, otimização de processos e atendimento ao
+                                cliente. Esses processos e essencial para empresas e nós temos pessoas capacitadas, com
+                                disponibilidades de horários para poder melhor atender.
+                                Serviços: Comercial e Industrial.
+                            </p>
+                            <a href="https://wa.me/14998179488"
+                                class="btn btn-secondary d-flex align-items-center gap-2">
+                                Saiba Mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="missaovisaovalores" class="">
+
+                <!-- seção missão visão e valores -->
+                <h2 class="text-center text-secondary">Política da Empresa</h2>
+
+                <div class="w-100 row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col d-flex">
+                        <div class="card text-secondary" style="flex: 1;">
+                            <div class="card-body">
+                                <h5 class="card-title">Missão</h5>
+                                <p class="card-text">
+                                    Facilitar a conexão entre empresas que buscam mão de obra qualificada e freelancers
+                                    talentosos, oferecendo uma plataforma que valoriza a flexibilidade, a diversidade e
+                                    a inovação, com foco na excelência, comprometimento e satisfação dos clientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="card text-secondary" style="flex: 1;">
+                            <div class="card-body">
+                                <h5 class="card-title">Visão</h5>
+                                <p class="card-text">
+                                    Ser uma referência em soluções de serviços flexíveis e de qualidade, promovendo a
+                                    colaboração e o desenvolvimento profissional de freelancers, gerando agilidade e
+                                    excelência nos serviços prestados, conforme as necessidades dos clientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="card text-secondary" style="flex: 1;">
+                            <div class="card-body">
+                                <h5 class="card-title">Valores</h5>
+                                <p class="card-text">
+                                    Executar e satisfazer os clientes com excelência, dedicação com segurança e
+                                    comprometimento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-secondary">
+        <div class="container p-4 d-flex flex-column justify-content-center align-items-center gap-2">
+
+            <div class="d-flex justify-content-center gap-4">
+                <a href="https://wa.me/14998179488" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                    </svg>
+                </a>
+
+                <a href="" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                </a>
+
+                <a href="" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </a>
+            </div>
+            <p>
+                Designed by <a href="https://br.freepik.com/" class="credit">Freepik</a>
+            </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
